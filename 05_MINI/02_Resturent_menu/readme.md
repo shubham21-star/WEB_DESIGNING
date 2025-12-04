@@ -1,134 +1,79 @@
-# Skewers & Co. — Restaurant Menu Website
+# 🥩 Skewers & Co. — Responsive Restaurant Menu Website
 
-A production-ready README tailored for GitHub. Cleaner, sharper, and aligned with best practices.
+This project is a fully responsive, static website built for a modern restaurant menu, emphasizing clean, efficient HTML5 and CSS3. A strong portfolio piece demonstrating mastery of **front-end fundamentals** without relying on external libraries or frameworks.
 
----
+## ✨ Project Status
 
-## 🔥 Overview
-
-Skewers & Co. is a fully responsive static website showcasing a modern restaurant menu. Built with clean HTML and CSS, the project emphasizes visual appeal, usability, and fast load times — a strong portfolio asset for front‑end fundamentals.
-
----
-
-## 🌐 Live Preview
-
-
-
-### 🔗 Repository & File Links
-
-* **Project Folder:** [https://github.com/shubham21-star/WEB_DESIGNING/tree/main/05_MINI/02_Resturent_menu](https://github.com/shubham21-star/WEB_DESIGNING/tree/main/05_MINI/02_Resturent_menu)
-* **index.html:** [https://github.com/shubham21-star/WEB_DESIGNING/blob/main/05_MINI/02_Resturent_menu/index.html](https://github.com/shubham21-star/WEB_DESIGNING/blob/main/05_MINI/02_Resturent_menu/index.html)
-* **style.css:** [https://github.com/shubham21-star/WEB_DESIGNING/blob/main/05_MINI/02_Resturent_menu/style.css](https://github.com/shubham21-star/WEB_DESIGNING/blob/main/05_MINI/02_Resturent_menu/style.css)
-* **Chicken Satay Image:** [https://github.com/shubham21-star/WEB_DESIGNING/blob/main/05_MINI/02_Resturent_menu/chicken-satay.jpg](https://github.com/shubham21-star/WEB_DESIGNING/blob/main/05_MINI/02_Resturent_menu/chicken-satay.jpg)
-* **Beef Kebab Image:** [https://github.com/shubham21-star/WEB_DESIGNING/blob/main/05_MINI/02_Resturent_menu/beef-kebab.jpg](https://github.com/shubham21-star/WEB_DESIGNING/blob/main/05_MINI/02_Resturent_menu/beef-kebab.jpg)
+| Badge | Value |
+| :--- | :--- |
+| **Status** | ![Status](https://img.shields.io/badge/Project%20Status-Complete-success) |
+| **Tech Stack** | ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) |
+| **Design** | ![Responsive](https://img.shields.io/badge/Design-Responsive-blue) |
 
 ---
 
-## 🛠 Tech Stack
+## 🔗 Live Demo & Repository
 
-* **HTML5** — semantic structure
-* **CSS3** — styling, layout, responsive behavior
-* **Vanilla Setup** — no frameworks, no dependencies
+| Target | Link |
+| :--- | :--- |
+| **Live Website Preview** | **[INSERT GITHUB PAGES LINK HERE AFTER DEPLOYMENT]** |
+| **Project Repository** | [https://github.com/shubham21-star/WEB_DESIGNING/tree/main/05_MINI/02_Resturent_menu](https://github.com/shubham21-star/WEB_DESIGNING/tree/main/05_MINI/02_Resturent_menu) |
+
+---
+
+## 🧭 Table of Contents
+
+1.  [Technical Overview](#-technical-overview)
+2.  [Features & Design](#-features--design)
+3.  [Project Structure](#-project-structure)
+4.  [Getting Started](#-getting-started)
+5.  [Future Enhancements](#-future-enhancements)
+6.  [License](#-license)
+
+---
+
+## 🛠 Technical Overview
+
+| Category | Details |
+| :--- | :--- |
+| **Core Languages** | HTML5 (Semantic Structure) & CSS3 (Styling & Layout) |
+| **Dependencies** | None (Vanilla Setup) |
+| **Layout Strategy** | CSS Flexbox for components; CSS Grid (`auto-fit`/`minmax()`) for the main menu. |
+| **Responsiveness** | Mobile-first approach using CSS Media Queries. |
+| **Goal** | Achieve fast load times and pixel-perfect rendering across all devices. |
+
+---
+
+## 💎 Features & Design
+
+The website is divided into distinct, easily navigable sections, ensuring a great user experience.
+
+### 💻 Key Design Elements
+
+* **Responsive Layout:** Adapts flawlessly from mobile phones (375px) to large desktop monitors.
+* **Sticky Navigation:** A non-intrusive header that remains visible for quick menu access.
+* **CSS Grid Menu:** Utilizes modern CSS Grid properties (`grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))`) for an elegant, self-adjusting menu card layout.
+
+### 📋 Section Breakdown
+
+1.  **Hero Section:** High-impact background image with a clear Call-to-Action (CTA).
+2.  **Menu Section:** Displays dish cards featuring an image, name, description, and price.
+3.  **About Section:** A concise and engaging story about the restaurant's brand and history.
+4.  **Contact & Hours:** Clear listing of business address and operating hours.
+5.  **Footer:** Contains copyright information and social media placeholders.
 
 ---
 
 ## 📁 Project Structure
 
+The codebase maintains a clean and intuitive file hierarchy for easy development and maintenance.
+
 ```bash
-project-root/
+Skewers-Co-Menu/
 │
-├── index.html        # Main layout and content
-├── style.css         # Core styling rules
-└── images/           # All hero + menu images
-```
-
----
-
-## 🚧 Features Breakdown
-
-### **1. Header**
-
-* Sticky navigation bar
-* Logo + quick-access links (Menu, About, Contact)
-
-### **2. Hero Section**
-
-* Eye-catching banner with background image
-* Tagline + description
-* Call-to-action button
-
-### **3. Menu Section**
-
-* Grid-based layout using CSS `auto-fit` + `minmax()`
-* Each card includes:
-
-  * High-quality image
-  * Dish name
-  * Description
-  * Price
-
-### **4. About Section**
-
-* Short brand story rooted in tradition
-
-### **5. Contact Section**
-
-* Address + business hours
-
-### **6. Footer**
-
-* Copyright © 2025
-
----
-
-## 📱 Responsive Design Strategy
-
-* Mobile-first layout adjustments
-* Flexible image containers
-* Scalable text and auto-adjusting grid
-
----
-
-## 🚀 Getting Started
-
-1. Download or clone the repo:
-
-   ```bash
-   git clone https://github.com/your-username/your-repo.git
-   ```
-2. Open `index.html` in your browser.
-3. Ensure images are in the correct `/images` directory.
-
-No build pipeline. No installations. Just open the file.
-
----
-
-## 🔮 Future Enhancements
-
-* Menu expansion via JSON data
-* Contact form with backend integration
-* Image slideshow or gallery
-* Subtle animations for card hover effects
-* Dark mode theme toggle
-
----
-
-## 📄 License
-
-This project is available for educational and personal projects. For commercial use, ensure proper licensing of images and fonts.
-
----
-
-## ⭐ GitHub Badges (Optional)
-
-Add these at the top of your README:
-
-```md
-![Status](https://img.shields.io/badge/Project%20Status-Active-brightgreen)
-![HTML](https://img.shields.io/badge/HTML-5-orange)
-![CSS](https://img.shields.io/badge/CSS-3-blue)
-```
-
----
-
-If you want, I can also add a **preview screenshot**, **table of contents**, or even generate a **GitHub Pages deployment guide**.
+├── index.html         # Primary application layout and content.
+├── style.css          # Comprehensive styling rules and media queries.
+└── images/            # Directory for all menu and hero images.
+    ├── chicken-satay.jpg
+    └── beef-kebab.jpg
+    └── ...
