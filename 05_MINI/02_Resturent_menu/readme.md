@@ -70,3 +70,34 @@ Skewers-Co-Menu/
     ├── chicken-satay.jpg
     └── beef-kebab.jpg
     └── ...
+
+---
+
+## 🚀 Getting Started
+
+To view and run this project locally, follow these simple steps. No complex build tools or installations are required.
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/shubham21-star/WEB_DESIGNING.git](https://github.com/shubham21-star/WEB_DESIGNING.git)
+    cd WEB_DESIGNING/05_MINI/02_Resturent_menu
+    ```
+2.  **Open the File:**
+    Locate and open the `index.html` file directly in your preferred web browser (Chrome, Firefox, etc.).
+
+---
+
+## 📈 Future Enhancements
+
+These additions would move the project from a static demo to a full-featured application:
+
+* **Dynamic Menu:** Load menu data from a separate JSON file to decouple content from structure.
+* **Interactive Contact Form:** Implement form validation and integrate with a basic serverless function for submissions.
+* **Accessibility (A11y):** Enhance keyboard navigation and screen reader compatibility (e.g., using `aria` attributes).
+* **Animations:** Add subtle CSS animations (like `transform` and `transition`) for a more dynamic user experience on menu item hover.
+
+---
+
+## ⚖️ License
+
+This project is licensed under the **MIT License**, making it open for use in educational, personal, and commercial projects. Please provide appropriate attribution.
