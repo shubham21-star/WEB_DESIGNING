@@ -10,14 +10,7 @@ This project is a fully responsive, static website built for a modern restaurant
 | **Tech Stack** | ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) |
 | **Design** | ![Responsive](https://img.shields.io/badge/Design-Responsive-blue) |
 
----
 
-## 🔗 Live Demo & Repository
-
-| Target | Link |
-| :--- | :--- |
-| **Live Website Preview** | **[INSERT GITHUB PAGES LINK HERE AFTER DEPLOYMENT]** |
-| **Project Repository** | [https://github.com/shubham21-star/WEB_DESIGNING/tree/main/05_MINI/02_Resturent_menu](https://github.com/shubham21-star/WEB_DESIGNING/tree/main/05_MINI/02_Resturent_menu) |
 
 ---
 
