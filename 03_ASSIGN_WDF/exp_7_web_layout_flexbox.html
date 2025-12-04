@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 7 - Flexbox & 2-Column Resume</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f0f8ff;
+        }
+
+        h2 { 
+            color: #2e8b57;
+            margin-bottom: 10px;
+        }
+
+        /* Flexbox Resume Layout */
+        .resume {
+            display: flex;
+            gap: 20px;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 2px solid #2e8b57;
+            border-radius: 10px;
+        }
+
+        .resume .left, .resume .right {
+            flex: 1;
+            padding: 15px;
+        }
+
+        .resume h3 {
+            color: #ff4500;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        .resume p, .resume ul {
+            margin-bottom: 10px;
+        }
+
+        .resume ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>2-Column Resume</h2>
+<p>This resume layout is created using Flexbox for a clean two-column look:</p>
+
+<div class="resume">
+
+    <!-- Left Column -->
+    <div class="left">
+        <h3>Personal Information</h3>
+        <p><strong>Name:</strong> John Doe</p>
+        <p><strong>Email:</strong> john.doe@example.com</p>
+        <p><strong>Phone:</strong> +91 9876543210</p>
+        <p><strong>Address:</strong> 123, ABC Street, City, Country</p>
+
+        <h3>Skills</h3>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React.js</li>
+            <li>Python & Flask</li>
+            <li>Data Analysis & Visualization</li>
+        </ul>
+
+        <h3>Hobbies</h3>
+        <ul>
+            <li>Reading Tech Blogs</li>
+            <li>Coding Challenges</li>
+            <li>Photography</li>
+        </ul>
+    </div>
+
+    <!-- Right Column -->
+    <div class="right">
+        <h3>Education</h3>
+        <p><strong>B.Tech in Computer Science</strong></p>
+        <p>XYZ University, 2020 - 2024</p>
+
+        <h3>Experience</h3>
+        <p><strong>Internship - Web Development</strong></p>
+        <p>ABC Tech Company, June 2023 - August 2023</p>
+        <ul>
+            <li>Developed responsive web pages using HTML, CSS, and JavaScript.</li>
+            <li>Implemented dynamic data tables and interactive UI elements.</li>
+        </ul>
+
+        <h3>Projects</h3>
+        <ul>
+            <li>Portfolio Website – Showcases my projects and skills.</li>
+            <li>AI Job Matching Tool – NLP based resume screening system.</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>
