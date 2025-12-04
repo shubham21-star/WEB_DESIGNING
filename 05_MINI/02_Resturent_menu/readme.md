@@ -72,6 +72,7 @@ Skewers-Co-Menu/
     └── ...
 
 ---
+```
 
 ## 🚀 Getting Started
 
