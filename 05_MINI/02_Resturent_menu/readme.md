@@ -1,27 +1,27 @@
 # 🥩 Skewers & Co. — Responsive Restaurant Menu Website
 
-This project is a fully responsive, static website built for a modern restaurant menu, emphasizing clean, efficient HTML5 and CSS3. A strong portfolio piece demonstrating mastery of **front-end fundamentals** without relying on external libraries or frameworks.
+A high-performance, fully responsive restaurant website engineered with clean HTML5 and CSS3. This project showcases strong front-end fundamentals, modern UI patterns, and a streamlined, zero-dependency architecture.
 
-## ✨ Project Status
+---
 
-| Badge | Value |
+## 🚦 Project Snapshot
+
+| Metric | Details |
 | :--- | :--- |
 | **Status** | ![Status](https://img.shields.io/badge/Project%20Status-Complete-success) |
 | **Tech Stack** | ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) |
 | **Design** | ![Responsive](https://img.shields.io/badge/Design-Responsive-blue) |
 
-
-
 ---
 
 ## 🧭 Table of Contents
 
-1.  [Technical Overview](#-technical-overview)
-2.  [Features & Design](#-features--design)
-3.  [Project Structure](#-project-structure)
-4.  [Getting Started](#-getting-started)
-5.  [Future Enhancements](#-future-enhancements)
-6.  [License](#-license)
+1. [Technical Overview](#technical-overview)
+2. [Features & UX](#features--ux)
+3. [Project Structure](#project-structure)
+4. [Getting Started](#getting-started)
+5. [Enhancement Roadmap](#enhancement-roadmap)
+6. [License](#license)
 
 ---
 
@@ -29,49 +29,58 @@ This project is a fully responsive, static website built for a modern restaurant
 
 | Category | Details |
 | :--- | :--- |
-| **Core Languages** | HTML5 (Semantic Structure) & CSS3 (Styling & Layout) |
-| **Dependencies** | None (Vanilla Setup) |
-| **Layout Strategy** | CSS Flexbox for components; CSS Grid (`auto-fit`/`minmax()`) for the main menu. |
-| **Responsiveness** | Mobile-first approach using CSS Media Queries. |
-| **Goal** | Achieve fast load times and pixel-perfect rendering across all devices. |
+| **Core Stack** | Pure HTML5 + CSS3 (no frameworks) |
+| **Dependencies** | None |
+| **Layout Engine** | Flexbox for structure, CSS Grid for product layout |
+| **Responsiveness** | Mobile-first, scales from 375px to 4K monitors |
+| **Performance Goal** | Zero-runtime, minimal payload, instant loading UX |
+
+A clean, production-aligned implementation focused on scalability and maintainability.
 
 ---
 
-## 💎 Features & Design
+## 💎 Features & UX
 
-The website is divided into distinct, easily navigable sections, ensuring a great user experience.
+A polished, user-centered experience crafted around modern UI expectations.
 
-### 💻 Key Design Elements
+### 🚀 Core Experience
+- **Fully responsive layout** across all breakpoints  
+- **Sticky, translucent navigation bar** powered by `backdrop-filter: blur()`  
+- **Auto-adjusting CSS Grid menu** using `auto-fit` + `minmax()`  
+- **Hero banner** with strong CTA and overlay  
+- **Consistent typography and spacing** for brand-grade aesthetics  
 
-* **Responsive Layout:** Adapts flawlessly from mobile phones (375px) to large desktop monitors.
-* **Sticky Navigation:** A non-intrusive header that remains visible for quick menu access.
-* **CSS Grid Menu:** Utilizes modern CSS Grid properties (`grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))`) for an elegant, self-adjusting menu card layout.
+### 📌 Section Walkthrough
+1. **Hero**  
+   Full-bleed background image with overlay and CTA.
 
-### 📋 Section Breakdown
+2. **Menu**  
+   Grid of card-based dish items with images, names, descriptions, and prices.
 
-1.  **Hero Section:** High-impact background image with a clear Call-to-Action (CTA).
-2.  **Menu Section:** Displays dish cards featuring an image, name, description, and price.
-3.  **About Section:** A concise and engaging story about the restaurant's brand and history.
-4.  **Contact & Hours:** Clear listing of business address and operating hours.
-5.  **Footer:** Contains copyright information and social media placeholders.
+3. **About**  
+   Clean narrative highlighting brand story and tradition.
+
+4. **Contact**  
+   Straightforward hours and address listing.
+
+5. **Footer**  
+   Lightweight, clarity-focused component.
 
 ---
 
 ## 📁 Project Structure
 
-The codebase maintains a clean and intuitive file hierarchy for easy development and maintenance.
-
 ```bash
 Skewers-Co-Menu/
 │
-├── index.html         # Primary application layout and content.
-├── style.css          # Comprehensive styling rules and media queries.
-└── images/            # Directory for all menu and hero images.
+├── index.html        # Main layout and HTML structure
+├── style.css         # Styles, utilities, and responsive rules
+└── images/           # Directory for hero and dish images
+    ├── hero-bg.jpg
     ├── chicken-satay.jpg
-    └── beef-kebab.jpg
+    ├── paneer-tikka.jpg
     └── ...
 
----
 ```
 
 ## 🚀 Getting Started
