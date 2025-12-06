@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skewers & Co.</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Skewers & Co. - Authentic flame-grilled skewers crafted with tradition. Explore kebabs, satays, and premium grilled dishes.">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -13,147 +19,197 @@
     <header class="site-header">
         <div class="container header-container">
             <div class="logo">Skewers & Co.</div>
-            <nav class="site-nav">
+
+            <nav class="site-nav" aria-label="Main Navigation">
                 <ul>
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#reserve">Reserve</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero hero-bg">
-        <div class="hero-content">
-            <h1>Flame-Kissed Perfection</h1>
-            <p>Authentic grilled skewers crafted with timeless tradition.</p>
-            <a href="images\hero-bg.jpg" class="img-button">Explore Menu</a>
-        </div>
-    </section>
+    <main>
 
-    <!-- MENU SECTION -->
-    <section id="menu" class="section menu container">
-        <h2>Our Signature Skewers</h2>
-
-        <div class="menu-items">
-
-            <!-- ITEM 1 -->
-            <div class="menu-card">
-                <div class="menu-image-container">
-                    <img src="images/classic-kebab.jpg" alt="Classic Beef Kebab">
-                </div>
-                <div class="menu-info">
-                    <h3>Classic  Kebab</h3>
-                    <p>Premium sirloin grilled with peppers & onions.</p>
-                    <span class="price">$12</span>
+        <!-- HERO -->
+        <section class="hero hero-bg">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Flame-Kissed Perfection</h1>
+                    <p>Authentic grilled skewers crafted with timeless tradition.</p>
+                    <a href="#menu" class="img-button">Explore Menu</a>
                 </div>
             </div>
+        </section>
 
-            <!-- ITEM 2 -->
-            <div class="menu-card">
-                <div class="menu-image-container">
-                    <img src="images/chicken-satay.jpg" alt="Spicy Chicken Satay">
+        <!-- MENU -->
+        <section id="menu" class="section menu container">
+            <h2 id="menu-title">Our Signature Skewers</h2>
+
+            <div class="menu-items">
+
+                <!-- Menu Card -->
+                <div class="menu-card">
+                    <div class="menu-image-container">
+                        <img src="images/classic-kebab.jpg" alt="Classic Beef Kebab" loading="lazy">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Classic Kebab</h3>
+                        <p>Premium sirloin grilled with peppers & onions.</p>
+                        <span class="price">$12</span>
+                    </div>
                 </div>
-                <div class="menu-info">
-                    <h3>Spicy Chicken Satay</h3>
-                    <p>Char-grilled chicken, chili-peanut glaze.</p>
-                    <span class="price">$10</span>
+
+                <div class="menu-card">
+                    <div class="menu-image-container">
+                        <img src="images/chicken-satay.jpg" alt="Spicy Chicken Satay" loading="lazy">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Spicy Chicken Satay</h3>
+                        <p>Char-grilled chicken with chili-peanut glaze.</p>
+                        <span class="price">$10</span>
+                    </div>
                 </div>
+
+                <div class="menu-card">
+                    <div class="menu-image-container">
+                        <img src="images/herb-skewers.jpg" alt="Herb-Crusted Lamb Skewers" loading="lazy">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Herb-Crusted Skewers</h3>
+                        <p>Rosemary, garlic, and olive oil marinade.</p>
+                        <span class="price">$14</span>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-image-container">
+                        <img src="images/paneer-tikka.jpg" alt="Paneer Tikka (Veg)" loading="lazy">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Paneer Tikka</h3>
+                        <p>Char-grilled cottage cheese with spicy yogurt.</p>
+                        <span class="price">$9</span>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-image-container">
+                        <img src="images/shrimp-skewers.jpg" alt="Garlic Butter Shrimp Skewers" loading="lazy">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Garlic Butter Shrimp</h3>
+                        <p>Fresh shrimp glazed with garlic butter.</p>
+                        <span class="price">$13</span>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-image-container">
+                        <img src="images/veg-skewers.jpg" alt="Grilled Vegetable Skewers" loading="lazy">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Grilled Veggie Mix</h3>
+                        <p>Seasonal vegetables char-grilled to perfection.</p>
+                        <span class="price">$8</span>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-image-container">
+                        <img src="images/fish-kebab.jpg" alt="Lemon Pepper Fish Kebab" loading="lazy">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Lemon Pepper Fish</h3>
+                        <p>Fish fillet infused with lemon zest & herbs.</p>
+                        <span class="price">$11</span>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-image-container">
+                        <img src="images/mutton-boti.jpg" alt="Mutton Boti Kebab" loading="lazy">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Mutton Boti Kebab</h3>
+                        <p>Slow-cooked mutton pieces with smoky flavor.</p>
+                        <span class="price">$15</span>
+                    </div>
+                </div>
+
             </div>
+        </section>
 
-            <!-- ITEM 3 -->
-            <div class="menu-card">
-                <div class="menu-image-container">
-                    <img src="images/herb-skewers.jpg" alt="Herb-Crusted Lamb Skewers">
+        <!-- ABOUT -->
+        <section id="about" class="section about container">
+            <h2>Our Story</h2>
+            <p>
+                Rooted in family tradition, Skewers & Co. blends heritage grilling techniques
+                with a modern culinary approach. Every dish is flame-kissed for unforgettable flavor.
+            </p>
+        </section>
+
+        <!-- RESERVATION SECTION -->
+        <section id="reservation" class="reservation-section">
+            <div class="container reservation-wrapper">
+
+                <!-- Left: Reservation Form -->
+                <div class="reservation-form-box">
+                    <h2>Dine-In Table Reservation</h2>
+                    <p class="sub-text">Reserve your table in advance and enjoy a seamless dining experience.</p>
+
+                    <form class="reservation-form">
+                        <div class="form-group">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Enter mobile number" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <input type="number" id="guests" min="1" max="20" placeholder="e.g., 4" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Reservation Date</label>
+                            <input type="date" id="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time">Preferred Time</label>
+                            <input type="time" id="time" required>
+                        </div>
+
+                        <button type="submit" class="reserve-btn">Reserve Now</button>
+                    </form>
                 </div>
-                <div class="menu-info">
-                    <h3>Herb-Crusted Skewers</h3>
-                    <p>Fresh rosemary, garlic, and olive oil marinade.</p>
-                    <span class="price">$14</span>
+
+                <!-- Right: Image -->
+                <div class="reservation-image-box">
+                    <img src="images/dining-room.jpg" alt="dining-room Image">
+                    <img src="images/dining-room1.jpg" alt="dining-room1 Image">
+                  
                 </div>
+
             </div>
+        </section>
 
-            <!-- ITEM 4 -->
-            <div class="menu-card">
-                <div class="menu-image-container">
-                    <img src="images/paneer-tikka.jpg" alt="Paneer Tikka (Veg)">
-                </div>
-                <div class="menu-info">
-                    <h3>Paneer Tikka</h3>
-                    <p>Soft cottage cheese grilled with spicy yogurt seasoning.</p>
-                    <span class="price">$9</span>
-                </div>
-            </div>
+        <!-- CONTACT -->
+        <section id="contact" class="section contact container">
+            <h2>Get in Touch</h2>
+            <address>
+                123 Grill Street, Flavor Town, FL 45678<br>
+                Hours: 11:00 AM - 10:00 PM (Daily)
+            </address>
+        </section>
 
-            <!-- ITEM 5 -->
-            <div class="menu-card">
-                <div class="menu-image-container">
-                    <img src="images/shrimp-skewers.jpg" alt="Garlic Butter Shrimp">
-                </div>
-                <div class="menu-info">
-                    <h3>Garlic Butter Shrimp</h3>
-                    <p>Fresh shrimp glazed in garlic butter and herbs.</p>
-                    <span class="price">$13</span>
-                </div>
-             </div>
-
-            <!-- ITEM 6 -->
-            <div class="menu-card">
-                <div class="menu-image-container">
-                    <img src="images/veg-skewers.jpg" alt="Grilled Veggie Mix (Veg)">
-                </div>
-                <div class="menu-info">
-                    <h3>Grilled Veggie Mix</h3>
-                    <p>Seasonal vegetables char-grilled to perfection.</p>
-                    <span class="price">$8</span>
-                </div>
-            </div>
-
-            <!-- ITEM 7 -->
-            <div class="menu-card">
-                <div class="menu-image-container">
-                    <img src="images/fish-kebab.jpg" alt="Lemon Pepper Fish">
-                </div>
-                <div class="menu-info">
-                    <h3>Lemon Pepper Fish</h3>
-                    <p>Tender fish fillet infused with lemon zest & herbs.</p>
-                    <span class="price">$11</span>
-                </div>
-            </div>
-
-            <!-- ITEM 8 -->
-            <div class="menu-card">
-                <div class="menu-image-container">
-                    <img src="images/mutton-boti.jpg" alt="Mutton Boti Kebab">
-                </div>
-                <div class="menu-info">
-                    <h3>Mutton Boti Kebab</h3>
-                    <p>Slow-cooked mutton cubes rich in smoky flavor.</p>
-                    <span class="price">$15</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section about container">
-        <h2>Our Story</h2>
-        <p>
-            Rooted in family traditions, Skewers & Co. blends heritage grilling methods 
-            with a modern culinary touch. Every skewer is handcrafted and flame-kissed 
-            to deliver unforgettable flavor.
-        </p>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section contact container">
-        <h2>Get in Touch</h2>
-        <address>
-            123 Grill Street, Flavor Town, FL 45678<br>
-            Hours: 11:00 AM – 10:00 PM (Daily)
-        </address>
-    </section>
+    </main>
 
     <!-- FOOTER -->
     <footer class="site-footer">
