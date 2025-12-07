@@ -42,6 +42,7 @@ The objective is to showcase:
 ---
 
 ## 🔹 File Structure
+```
 
 TechEdge/
 │── index.html
