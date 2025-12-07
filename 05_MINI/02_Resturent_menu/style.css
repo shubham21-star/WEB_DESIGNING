@@ -222,6 +222,43 @@ nav ul li a:hover {
     object-fit: cover;
 }
 
+/* CHEFS SECTION */
+.chefs-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.chef-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.chef-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.chef-card h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.chef-card p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.5;
+}
+
+
 /* CONTACT */
 .contact address {
     background: #fff;
@@ -235,6 +272,72 @@ nav ul li a:hover {
     line-height: 1.7;
 }
 
+/* Grid Layout */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Left Side Info */
+.contact-info h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #d35400;
+}
+
+.contact-info p, 
+.contact-info address {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* Right Side Contact Form */
+.contact-form {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-form h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+/* Form Inputs */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+/* Contact Button */
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #d98026;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #c96f20;
+}
+
+
 /* FOOTER */
 .site-footer {
     margin-top: 40px;
@@ -243,4 +346,20 @@ nav ul li a:hover {
     text-align: center;
     padding: 20px 0;
     font-size: 16px;
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+
+.footer-inner a {
+    color: #ffcc66;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-inner a:hover {
+    color: #d98026;
 }
