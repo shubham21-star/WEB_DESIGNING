@@ -20,14 +20,20 @@ This is how professionals start.
 
 ## 📂 File Overview
 
-| No. | File Name                                 | Description                                                                                                                        | Concepts Illustrated                               |
-| --- | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
-| 1️⃣ | `01_Basic_Document_Structure.html`        | Sets up the minimal valid HTML document using `<!DOCTYPE>`, `<html>`, `<head>`, and `<body>`.                                      | Boilerplate, Metadata, Document Tree               |
-| 2️⃣ | `02_Text_and_Semantic_Elements.html`      | Uses headings, paragraphs, emphasis tags, blockquotes, and semantic containers like `<header>`, `<main>`, `<footer>`, `<section>`. | Semantic Structure, Heading Hierarchy              |
-| 3️⃣ | `03_Lists_and_Tables.html`                | Demonstrates ordered, unordered, and definition lists, plus table creation with row and column spans.                              | Data Organization, `<thead>`, `<tbody>`, `<tfoot>` |
-| 4️⃣ | `04_Hyperlinks_and_Images.html`           | Covers external links, internal navigation, email links, and proper image embedding with mandatory `alt` attributes.               | Navigation (`<a>`), Media (`<img>`), Accessibility |
-| 5️⃣ | `05_Basic_Form_Elements.html`             | Introduces form structure, labels, and common input types.                                                                         | User Input, `form` attributes (`action`, `method`) |
-| 6️⃣ | `06_HTML_Entities_and_Special_Chars.html` | Explains how to display reserved characters and symbols using HTML entities.                                                       | Character Encoding, Reserved Characters            |
+
+| No. | File Name | Primary Focus | Concepts Demonstrated |
+|---|---|---|---|
+| 1️⃣ | `01_Legend_Form.html` | Basic Form Structure | `<input>` types (text, password, submit), basic form flow, submit behavior |
+| 2️⃣ | `02_All_HTML_Tags.html` | Tag Reference & Usage | Headings, paragraphs, text formatting (`<strong>`, `<em>`), utility tags like `<details>`, `<figure>`, `<blockquote>` |
+| 3️⃣ | `03_Basics_HTML_Tags.html` | General HTML Basics | Foundational document structure, common inline and block-level elements |
+| 4️⃣ | `04_City_Care_Hospital.html` | Document Layout | Semantic elements (`<header>`, `<section>`), tabular doctor data, interactive `<details>/<summary>` |
+| 5️⃣ | `05_Restaurant_Menu.html` | Lists & Sections | Hierarchical content using `<h2>` and unordered lists (`<ul>`) |
+| 6️⃣ | `06_School_Time_Table.html` | Complex Table Data | Multi-row and multi-column tables using `<table>`, `<tr>`, `<td>` |
+| 7️⃣ | `07_My_Resume.html` | Structured Documentation | Tables for education history, lists for skills and competencies |
+| 8️⃣ | `08_School_Admission_Form.html` | Advanced Forms | `<fieldset>`, `<legend>`, grouped inputs, `<label>` binding, `required` attributes |
+| 9️⃣ | `09_Student_Report_Card.html` | Semantic Tables | Proper table semantics with `<caption>`, `<thead>`, `<tbody>` |
+| 🔟 | `10_Travel_Website.html` | Navigation & Media | Primary navigation with `<nav>`, media grouping using `<figure>` and `<figcaption>` |
+
 
 ---
 
