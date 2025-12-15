@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <style>
+            .container1 {
+            position: relative;
+           
+            }
+
+            .box1 {
+            position: relative;
+            z-index: 1;
+            border: 2px solid black;
+            height: 100px;
+            margin: 30px;
+            
+            }
+
+            .box2 {
+            position: absolute;
+            z-index: 3;
+            background: lightgray;
+            height: 60px;
+            width: 70%;
+            left: 50px;
+            top: 50px;
+            }
+
+            .box3 {
+            position: absolute;
+            z-index: 2;
+            background: lightgreen;
+            width: 35%;
+            left: 270px;
+            top: -15px;
+            height: 100px;
+            }
+        
+            .ic {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m14.24 12.01l2.32 2.32c.28-.72.44-1.51.44-2.33s-.16-1.59-.43-2.31zm5.29-5.3l-1.26 1.26c.63 1.21.98 2.57.98 4.02s-.36 2.82-.98 4.02l1.2 1.2a9.94 9.94 0 0 0 1.54-5.31c-.01-1.89-.55-3.67-1.48-5.19m-3.82 1L10 2H9v7.59L4.41 5L3 6.41L8.59 12L3 17.59L4.41 19L9 14.41V22h1l5.71-5.71l-4.3-4.29zM11 5.83l1.88 1.88L11 9.59zm1.88 10.46L11 18.17v-3.76z'/%3E%3C/svg%3E");
+                background-color: currentColor;
+                -webkit-mask-image: var(--svg);
+                mask-image: var(--svg);
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+                -webkit-mask-size: 100% 100%;
+                mask-size: 100% 100%;
+            }
+            
+        </style>
+    </head>
+<body>
+
+    <div class="container1">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+    </div>
+    <div class="ic"></div>
+
+</body>
+
+
+<hr>
+
+<!-- Without z-index -->
+
+<head>
+    <style>
+        .container2 {
+        position: relative;
+        }
+
+        .box4 {
+        position: relative;
+        border: 2px solid black;
+        height: 100px;
+        margin: 30px;
+        }
+
+        .box5 {
+        position: absolute;
+        background: lightgray;
+        height: 60px;
+        width: 70%;
+        left: 50px;
+        top: 50px;
+        }
+
+        .box6 {
+        position: absolute;
+        background: lightgreen;
+        width: 35%;
+        left: 270px;
+        top: -15px;
+        height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container2">
+        <div class="box4">box4</div>
+        <div class="box5">box5</div>
+        <div class="box6">box6</div>
+    </div>
+
+</body>
+</html>
