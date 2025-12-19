@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #7f6cf0;
+}
+
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 80px;
+}
+
+/* LEFT SECTION */
+.left {
+    flex: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.left .line {
+    width: 6px;
+    height: 340px;
+    background: white;
+    border-radius: 6px;
+}
+
+.left h1 {
+    font-size: 92px;
+    line-height: 1.35;
+    font-weight: 700;
+}
+
+
+/* RIGHT SECTION */
+.right {
+    flex: 100;
+    max-width: 525px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.right h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* FORM  */
+form label {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #333;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #1e1e1e;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+.row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.row div {
+    flex: 1;
+}
+
+/* GENDER */
+.gender {
+    display: flex;
+    gap: 80px;
+    margin-top: 8px;
+}
+
+.gender label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
+
+
+/* BUTTON */
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: #755fed;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3a2eac;
+}
