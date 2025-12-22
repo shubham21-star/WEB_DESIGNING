@@ -137,9 +137,13 @@ img {
     filter: invert(1);
 }
 
-.btn-app img:hover {
+.btn-app img:hover a {
     color: #000000;
-    filter: invert(-1);
+
+}
+
+.btn-app:hover a img{
+    filter: brightness(0) invert(1);
 
 }
 /* Features */
@@ -238,7 +242,7 @@ img {
 }
 
 .stat-item p {
-    color: #847e7f;
+    color: #000000;
 }
 
 /* Pricing */
@@ -320,6 +324,7 @@ img {
 
 .btn-white:hover {
     background: #f1365f;
+    color: #ffffff;
 }
 
 /* Footer */
