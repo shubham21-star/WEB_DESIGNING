@@ -24,7 +24,7 @@ body {
 .site-header {
     background: #000;
     color: #fff;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     padding: 18px 0;
@@ -261,11 +261,11 @@ a:hover {
 
 /* CONTACT */
 .contact address {
-    background: #fff;
-    padding: 20px;
+   background: #fff;
+    padding: 0px;
     text-align: center;
     max-width: 450px;
-    margin: auto;
+    margin: -5px;
     border-radius: 10px;
     color: #444;
     font-style: normal;
