@@ -33,12 +33,10 @@
       font-weight: 600;
       padding: 10px 18px;
       border-radius: 6px;
-      
     }
 
     nav ul li a:hover {
       background-color: #0eb216;
-      
     }
 
     nav ul li a.active {
@@ -47,7 +45,6 @@
 
     nav ul li .sign:visited {
       background-color: rgb(16, 155, 74);
-      
     }
 
     .container {
@@ -57,9 +54,54 @@
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       padding: 25px 30px;
-    }  
+    }
 
-    
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #004d80;
+    }
+
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: 500;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    .gender-group {
+      margin-top: 10px;
+    }
+
+    .gender-group input {
+      width: auto;
+      margin-right: 6px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #004d80;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #00375c;
+    }
   </style>
 </head>
 
@@ -75,17 +117,41 @@
       </ul>
     </nav>
   </header>
+
   <div class="container">
     <h2>College Registration Form</h2>
-    <form>
-      <label for="name">Full Name:   </label>
-      <input type="text" id="name" placeholder="Enter your full name" required>
-      <br>
-      <label for="email">Enter email:</label>
-      <input type="text" id="email" placeholder="Enter your email" required>
-      <br>
-      <label for="Contact no.">Enter mobile no.:</label>
-      <input type="number" id="number" placeholder="Enter your mobile number" required>
 
-  </body>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="number">Mobile Number</label>
+      <input type="tel" id="number" placeholder="Enter your mobile number" required>
+
+      <label>Gender</label>
+      <div class="gender-group">
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other
+      </div>
+
+      <label for="course">Course</label>
+      <select id="course">
+        <option>Select Course</option>
+        <option>B.Tech</option>
+        <option>BCA</option>
+        <option>MCA</option>
+        <option>MBA</option>
+      </select>
+
+      <label for="address">Address</label>
+      <textarea id="address" rows="3" placeholder="Enter your address"></textarea>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</body>
 </html>
