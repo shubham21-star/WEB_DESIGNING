@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover Button</title>
 
-        body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .btn{
-            height: 100px;
-            width: 200px;
-            background-color: rgb(40, 134, 134);
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            transition: all 1s;
-            
-        }
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
 
-        .btn:hover{
-            display: flex;
-            background-color: rgb(35, 226, 61);
-            width: 400px;
-            height: 200px;
-            text-align: center;
-            justify-content: center;
-        }
+    .btn {
+      height: 100px;
+      width: 200px;
+      background-color: rgb(40, 134, 134);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 
+        background-color 0.4s ease,
+        transform 0.4s ease;
+    }
 
-        .btn h1{
-            display: flex;
-            color: aliceblue;
-            text-align: center;
-            justify-content: center;
-           
-            
-            
-        }
-    </style>
+    .btn:hover {
+      background-color: rgb(35, 226, 61);
+      transform: scale(1.8);
+    }
+
+    .btn h1 {
+      margin: 0;
+      color: #fff;
+      font-size: 24px;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="btn"><h1>BUTTON</h1></div>
-    
+  <div class="btn">
+    <h1>BUTTON</h1>
+  </div>
 </body>
 </html>
