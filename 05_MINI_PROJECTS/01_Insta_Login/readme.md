@@ -49,14 +49,13 @@ Deliver a production-grade static layout reflecting:
 ---
 
 ## 🔹 File Structure
-
+```
 Instagram-Clone/
 │── index.html
 │── style.css
 │── insta_image.jpg
 │── README.md
 
-```
 ```
 ---
 
