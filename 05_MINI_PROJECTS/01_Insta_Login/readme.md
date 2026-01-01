@@ -57,7 +57,7 @@ Instagram-Clone/
 │── README.md
 
 ```
-
+```
 ---
 
 ## 🔹 How to Run
