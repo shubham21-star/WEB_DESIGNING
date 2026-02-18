@@ -1,0 +1,392 @@
+/* ================= RESET & BASE ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #222;
+    line-height: 1.7;
+    padding-top: 90px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ================= HEADER ================= */
+.site-header {
+    background: #000;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 18px 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* ================= NAV ================= */
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.site-nav a:hover {
+    color: #ffcc66;
+}
+
+/* ================= HERO ================= */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-bg {
+    background-image: url("Images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-bg::before {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: #ffcc66;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.img-button {
+    padding: 12px 30px;
+    background: #ffcc66;
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.img-button:hover {
+    background: #f4b942;
+}
+
+/* ================= SECTION ================= */
+.section {
+    padding: 60px 0;
+}
+
+.section h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+/* ================= MENU ================= */
+.menu-category {
+    margin-bottom: 60px;
+}
+
+.category-title {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #d35400;
+    font-weight: 700;
+    border-left: 6px solid #d35400;
+    padding-left: 12px;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.menu-card {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu-card h4 {
+    font-size: 20px;
+    margin: 12px 15px 5px;
+    font-weight: 600;
+}
+
+.menu-card p {
+    font-size: 15px;
+    color: #555;
+    margin: 0 15px 10px;
+}
+
+.price {
+    display: block;
+    margin: 0 15px 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #d35400;
+}
+
+/* ===== RESERVATION SECTION ===== */
+.reservation-section {
+    padding: 60px 0;
+    background: #fff2e0;
+}
+
+.reservation-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 30px;
+    align-items: start;
+}
+
+/* FORM BOX */
+.reservation-form-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    margin: auto;
+}
+
+.reservation-form-box h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.sub-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* FORM STYLING */
+.reservation-form .form-group {
+    margin-bottom: 15px;
+}
+
+.reservation-form label {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.reservation-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* BUTTON */
+.reserve-btn {
+    width: 100%;
+    padding: 12px;
+    background: #d98026;
+    color: #fff;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+/* IMAGE BOX */
+.reservation-image-box img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* CHEFS SECTION */
+.chefs-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.chef-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.chef-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.chef-card h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.chef-card p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.5;
+}
+
+
+/* CONTACT */
+.contact address {
+   background: #fff;
+    padding: 0px;
+    text-align: center;
+    max-width: 450px;
+    margin: -5px;
+    border-radius: 10px;
+    color: #444;
+    font-style: normal;
+    line-height: 1.7;
+}
+
+/* Grid Layout */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Left Side Info */
+.contact-info h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #d35400;
+}
+
+.contact-info p, 
+.contact-info address {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* Right Side Contact Form */
+.contact-form {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-form h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+/* Form Inputs */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+/* Contact Button */
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #d98026;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #c96f20;
+}
+
+
+/* FOOTER */
+.site-footer {
+    margin-top: 40px;
+    background: #111;
+    color: #eee;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+
+.footer-inner a {
+    color: #ffcc66;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-inner a:hover {
+    color: #d98026;
+}
