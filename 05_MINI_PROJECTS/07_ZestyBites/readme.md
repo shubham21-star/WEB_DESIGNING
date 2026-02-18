@@ -52,6 +52,7 @@ Experience the live site here:
 │   └── ...
 └── README.md         # Documentation
 ---
+```
 
 🚀 How to Run Locally
 Clone the repository:
