@@ -54,11 +54,11 @@ Experience the live site here:
 ---
 ```
 
-🚀 How to Run Locally
+## 🚀 How to Run Locally
 Clone the repository:
 ```
 Bash
-git clone [https://github.com/shubham21-star/WEB_DESIGNING.git] (https://github.com/shubham21-star/WEB_DESIGNING.git)
+git clone [https://github.com/shubham21-star/WEB_DESIGNING.git] 
 ```
 ---
 Navigate to the project folder:
@@ -72,7 +72,7 @@ Launch:
 Open index.html in any modern web browser.
 
 ---
-##📌 Technical Notes
+## 📌 Technical Notes
 This is a front-end only project.
 
 There is no backend or database integration.
@@ -80,7 +80,17 @@ There is no backend or database integration.
 The reservation form is for UI demonstration; it does not handle data submission.
 
 ---
-##👨‍💻 Author
+## 📈 Future Enhancements
+
+These additions would move the project from a static demo to a full-featured application:
+
+* **Dynamic Menu:** Load menu data from a separate JSON file to decouple content from structure.
+* **Interactive Contact Form:** Implement form validation and integrate with a basic serverless function for submissions.
+* **Accessibility (A11y):** Enhance keyboard navigation and screen reader compatibility (e.g., using `aria` attributes).
+* **Animations:** Add subtle CSS animations (like `transform` and `transition`) for a more dynamic user experience on menu item hover.
+
+---
+## 👨‍💻 Author
 
 Shubham Kumar
 B.Tech CSE (Data Analytics)
@@ -90,5 +100,5 @@ GitHub: https://github.com/shubham21-star
 LinkedIn: https://www.linkedin.com/in/shubham21-star/
 
 ---
-##📜 License
+## 📜 License
 This project is created for educational purposes.
