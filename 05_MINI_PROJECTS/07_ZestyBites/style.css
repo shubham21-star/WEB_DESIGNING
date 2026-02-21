@@ -77,7 +77,9 @@ body {
 }
 
 .hero-bg::before {
+    content: "";
     position: absolute;
+    inset: 0;
     background: rgba(0, 0, 0, 0.5);
 }
 
@@ -123,57 +125,93 @@ body {
 }
 
 /* ================= MENU ================= */
-.menu-category {
-    margin-bottom: 60px;
+
+.menu-section {
+    padding: 80px 0;
+    background: #f8f8f8;
 }
 
-.category-title {
-    font-size: 28px;
-    margin-bottom: 25px;
-    color: #d35400;
-    font-weight: 700;
-    border-left: 6px solid #d35400;
-    padding-left: 12px;
+.menu-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 50px;
 }
 
+/* Grid */
 .menu-items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
 }
 
+/* Card */
 .menu-card {
     background: #fff;
-    border-radius: 14px;
+    border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.menu-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+/* Image */
 .menu-card img {
     width: 100%;
-    height: 200px;
+    height: 240px;
     object-fit: cover;
 }
 
-.menu-card h4 {
-    font-size: 20px;
-    margin: 12px 15px 5px;
-    font-weight: 600;
+/* Content */
+.menu-content {
+    padding: 20px;
 }
 
-.menu-card p {
+.menu-content h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.menu-content p {
     font-size: 15px;
     color: #555;
-    margin: 0 15px 10px;
+    line-height: 1.5;
+    margin-bottom: 12px;
 }
 
 .price {
-    display: block;
-    margin: 0 15px 15px;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 800;
     color: #d35400;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+    .menu-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .menu-title {
+        font-size: 32px;
+    }
+
+    .menu-items {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-card img {
+        height: 220px;
+    }
 }
 
 /* ===== RESERVATION SECTION ===== */
@@ -285,10 +323,9 @@ body {
     line-height: 1.5;
 }
 
-
 /* CONTACT */
 .contact address {
-   background: #fff;
+    background: #fff;
     padding: 0px;
     text-align: center;
     max-width: 450px;
@@ -364,7 +401,6 @@ body {
     background: #c96f20;
 }
 
-
 /* FOOTER */
 .site-footer {
     margin-top: 40px;
@@ -389,4 +425,137 @@ body {
 
 .footer-inner a:hover {
     color: #d98026;
+}
+
+/* ================= MOBILE RESPONSIVE (ONLY MEDIA QUERIES) ================= */
+
+/* Tablets & small laptops */
+@media (max-width: 992px) {
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .site-nav ul {
+        gap: 18px;
+    }
+
+    .menu-items {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+}
+
+/* Large phones & small tablets */
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 80px;
+    }
+
+    /* Header */
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .site-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Hero */
+    .hero {
+        height: auto;
+        padding: 100px 0 60px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    /* Sections */
+    .section {
+        padding: 45px 0;
+    }
+
+    .section h2 {
+        font-size: 30px;
+    }
+
+    /* Menu */
+    .menu-items {
+        grid-template-columns: 1fr;
+    }
+
+    /* Reservation */
+    .reservation-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .site-nav a {
+        font-size: 16px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .img-button {
+        padding: 10px 22px;
+        font-size: 15px;
+    }
+
+    .category-title {
+        font-size: 24px;
+    }
+
+    .menu-card h4 {
+        font-size: 18px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    /* Forms */
+    .reservation-form-box,
+    .contact-form {
+        padding: 20px;
+    }
+
+    .reserve-btn,
+    .contact-form button {
+        font-size: 15px;
+    }
+
+    /* Footer */
+    .site-footer {
+        font-size: 14px;
+    }
 }
