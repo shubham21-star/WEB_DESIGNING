@@ -1,0 +1,39 @@
+body {
+    margin: 100px;
+    font-family: Arial, sans-serif;
+    background: #959393;
+    color: white;
+    text-align: center;
+}
+
+div{
+    margin:100px auto;
+    display:flex;
+    justify-content:center;
+    text-align: center;
+
+
+}
+
+.circle {
+    width:100px;
+    height:100px; 
+    background: #a54343;
+    border-radius: 50%;
+}
+
+
+.circle.show {   
+    transform: translateX(0);
+}
+
+
+.c1 { background: #ff6b6b; }
+.c2 { background: #feca57; }
+.c3 { background: #48dbfb; }
+.c4 { background: #1dd1a1; }
+.c5 { background: #5f27cd; }
+.c6 { background: #ff9ff3; }
+.c7 { background: #54a0ff; }
+.c8 { background: #00d2d3; }
+.c9 { background: #ff9f43; }
