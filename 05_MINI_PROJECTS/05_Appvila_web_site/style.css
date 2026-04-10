@@ -360,3 +360,70 @@ img {
     gap: 14px;
     margin-top: 18px;
 }
+
+/* ================= BY USING AI MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .nav-menu {
+        display: none; 
+    }
+
+    .navbar .container1 {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    /* Hero Section */
+    .container2 {
+        grid-template-columns: 1fr; 
+        text-align: center;
+    }
+
+    .text h1 {
+        font-size: 28px;
+    }
+
+    .btn-app {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-app a {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .hero-images {
+        margin-top: 20px;
+    }
+
+    .phone {
+        width: 70%;
+        margin: auto;
+    }
+
+    /* Features */
+    .features-all {
+        grid-template-columns: 1fr; 
+    }
+
+    /* Stats */
+    .stats-all {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Pricing */
+    .pricing-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    /* Footer */
+    .container7 {
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+}
