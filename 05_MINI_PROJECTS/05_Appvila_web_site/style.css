@@ -10,6 +10,7 @@ body {
     color: #1f2937;
     background-color: #ffffff;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 a {
@@ -24,6 +25,7 @@ ul {
 img {
     max-width: 100%;
     display: block;
+    height: auto;
 }
 
 /* Containers */
@@ -82,7 +84,7 @@ img {
 .btn-G:hover {
     background: #ffffff;
     color: #f1365f;
-    border: #000000,solid;
+   border: 1px solid #000000;
 }
 
 /* Hero */
@@ -427,3 +429,4 @@ img {
         text-align: center;
     }
 }
+
